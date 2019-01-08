@@ -44,7 +44,6 @@ namespace TestApiWatson.Infra.CrossCutting.IoC
         private static void ConfigurarInjecoesAppServices()
         {
             ConstrutorContainer.RegisterType<MensagemAppService>().As<IMensagemAppService>();
-            ConstrutorContainer.RegisterType<MensagemAppService>().As<IMensagemAppService>();
         }
 
         private static void ConfigurarInjecoesServices()

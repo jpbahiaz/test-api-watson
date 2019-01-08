@@ -7,7 +7,7 @@ using TestApiWatson.Shared.Util.Configuracoes;
 
 namespace TestApiWatson.Util
 {
-    public abstract class ConfiguracoesAplicacaoImplementacao : ConfiguracoesAplicacao
+    public class ConfiguracoesAplicacaoImplementacao : ConfiguracoesAplicacao
     {
         private readonly IConfigurationSection _configApp;
         //private static Dictionary<string, string> dicionario;
@@ -24,7 +24,7 @@ namespace TestApiWatson.Util
 
         public override string URL_BASE_WATSON => _configApp.GetValue<string>("UrlBaseWatson");
               
-        public override string ID_WORKSPACE_WATSON => _configApp.GetValue<string>("IdWorkspaceWatsonNucleoObra");
+        public override string ID_WORKSPACE_WATSON => _configApp.GetValue<string>("IdWorkspaceWatson");
 
         public override string USERNAME_WATSON => _configApp.GetValue<string>("UsernameWatson");
 

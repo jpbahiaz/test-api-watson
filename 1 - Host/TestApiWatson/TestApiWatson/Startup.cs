@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -11,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using TestApiWatson.Infra.CrossCutting.IoC;
+using TestApiWatson.Shared.Util.Configuracoes;
+using TestApiWatson.Util;
 
 namespace TestApiWatson
 {
@@ -27,9 +30,11 @@ namespace TestApiWatson
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
+                      
             IoCConfig.Inicializar();
-                       
+
+            ConfigurarIoCAdicional();
+
             IoCConfig.ConstrutorContainer.Populate(services);
 
             return new AutofacServiceProvider(IoCConfig.ConstrutorContainer.Build());
@@ -44,6 +49,11 @@ namespace TestApiWatson
             }
 
             app.UseMvc();
+        }
+
+        private void ConfigurarIoCAdicional()
+        {
+            IoCConfig.ConstrutorContainer.RegisterType<ConfiguracoesAplicacaoImplementacao>().As<ConfiguracoesAplicacao>();
         }
     }
 }

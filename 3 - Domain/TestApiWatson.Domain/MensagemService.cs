@@ -13,7 +13,7 @@ namespace TestApiWatson.Domain
 
         public MensagemService(IWatsonAgent watsonAgent)
         {
-            watsonAgent = _watsonAgent;
+            _watsonAgent = watsonAgent;
         }
 
         public ConversaWatson EnviarMensagem(string mensagem)

@@ -18,7 +18,7 @@ namespace TestApiWatson.Controllers
 
         public MessagesController(IMensagemAppService mensagemAppService)
         {
-            mensagemAppService = _mensagemAppService;
+            _mensagemAppService = mensagemAppService;
         }
 
         // GET: api/Messages
