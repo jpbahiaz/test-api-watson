@@ -9,7 +9,6 @@ namespace TestApiWatson.Shared.Util.Configuracoes
         public abstract bool APLICACAO_EM_TESTE_UNITARIO { get; }
         public abstract bool APLICACAO_EM_TESTE_INTEGRACAO { get; }
         public abstract string URL_BASE_WATSON { get; }
-        public abstract string URL_VALIDAR_TOKEN { get; }
         public abstract string ID_WORKSPACE_WATSON { get; }
         public abstract string USERNAME_WATSON { get; }
         public abstract string PASSWORD_WATSON { get; }

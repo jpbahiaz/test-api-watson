@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\1 - Host\TestApiWatson\TestApiWatson.Shared.Util\TestApiWatson.Shared.Util.csproj" />
+    <ProjectReference Include="..\..\..\3 - Domain\TestApiWatson.Domain.Models\TestApiWatson.Domain.Models.csproj" />
+  </ItemGroup>
+
 </Project>
