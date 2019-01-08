@@ -1,6 +1,8 @@
 ﻿using Autofac;
 using Microsoft.Extensions.Configuration;
 using System;
+using TesteApiWatson.Infra.Data.ServiceAgent;
+using TesteApiWatson.Infra.Data.ServiceAgent.Interfaces;
 
 namespace TestApiWatson.Infra.CrossCutting.IoC
 {
@@ -36,7 +38,7 @@ namespace TestApiWatson.Infra.CrossCutting.IoC
 
         private static void ConfigurarInjecoesServiceAgents()
         {
-            //ConstrutorContainer.RegisterType<WatsonAgentMock>().As<IWatsonAgent>();
+            ConstrutorContainer.RegisterType<WatsonAgent>().As<IWatsonAgent>();
         }       
     }
 }

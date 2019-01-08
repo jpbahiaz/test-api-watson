@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\4 - Infra\2 - CrossCutting\TestApiWatson.Infra.CrossCutting.IoC\TestApiWatson.Infra.CrossCutting.IoC.csproj" />
+    <ProjectReference Include="..\TestApiWatson.Shared.Util\TestApiWatson.Shared.Util.csproj" />
   </ItemGroup>
 
 </Project>
