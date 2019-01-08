@@ -23,9 +23,7 @@ namespace TestApiWatson.Util
         public override bool APLICACAO_EM_TESTE_INTEGRACAO => _configApp.GetValue<bool>("AplicacaoEmTesteUnitario");
 
         public override string URL_BASE_WATSON => _configApp.GetValue<string>("UrlBaseWatson");
-
-        public override string URL_VALIDAR_TOKEN => _configApp.GetValue<string>("UrlValidarToken");
-
+              
         public override string ID_WORKSPACE_WATSON => _configApp.GetValue<string>("IdWorkspaceWatsonNucleoObra");
 
         public override string USERNAME_WATSON => _configApp.GetValue<string>("UsernameWatson");
