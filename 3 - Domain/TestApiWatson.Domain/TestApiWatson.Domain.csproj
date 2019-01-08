@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\4 - Infra\1 - Data\TesteApiWatson.Infra.Data.ServiceAgent\TesteApiWatson.Infra.Data.ServiceAgent.csproj" />
+    <ProjectReference Include="..\TestApiWatson.Domain.Interfaces\TestApiWatson.Domain.Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>

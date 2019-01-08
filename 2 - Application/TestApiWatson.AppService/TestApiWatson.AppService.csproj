@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\3 - Domain\TestApiWatson.Domain.Interfaces\TestApiWatson.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\TestApiWatson.AppService.Interfaces\TestApiWatson.AppService.Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>

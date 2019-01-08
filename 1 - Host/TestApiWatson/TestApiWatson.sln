@@ -25,13 +25,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Appl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{C86B6DC5-5B37-43CB-BC5F-8666C0CCB5B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApiWatson.AppService", "..\..\2 - Application\TestApiWatson.AppService\TestApiWatson.AppService.csproj", "{67F3DB35-0881-4CCF-848B-7507FBD5857B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApiWatson.AppService", "..\..\2 - Application\TestApiWatson.AppService\TestApiWatson.AppService.csproj", "{67F3DB35-0881-4CCF-848B-7507FBD5857B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApiWatson.Domain", "..\..\3 - Domain\TestApiWatson.Domain\TestApiWatson.Domain.csproj", "{337787D3-6EDB-4B65-9075-C4C7CB988F6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApiWatson.Domain", "..\..\3 - Domain\TestApiWatson.Domain\TestApiWatson.Domain.csproj", "{337787D3-6EDB-4B65-9075-C4C7CB988F6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApiWatson.Domain.Interfaces", "..\..\3 - Domain\TestApiWatson.Domain.Interfaces\TestApiWatson.Domain.Interfaces.csproj", "{16320486-2993-4FC5-9C04-1D70EA95FBB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApiWatson.Domain.Interfaces", "..\..\3 - Domain\TestApiWatson.Domain.Interfaces\TestApiWatson.Domain.Interfaces.csproj", "{16320486-2993-4FC5-9C04-1D70EA95FBB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApiWatson.Domain.Models", "..\..\3 - Domain\TestApiWatson.Domain.Models\TestApiWatson.Domain.Models.csproj", "{8015417C-BE7C-43D4-996C-5743C7DDDDBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApiWatson.Domain.Models", "..\..\3 - Domain\TestApiWatson.Domain.Models\TestApiWatson.Domain.Models.csproj", "{8015417C-BE7C-43D4-996C-5743C7DDDDBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApiWatson.AppService.Interfaces", "..\..\2 - Application\TestApiWatson.AppService.Interfaces\TestApiWatson.AppService.Interfaces.csproj", "{079D23E2-E752-4CB6-A082-A0AE60BEDB87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{8015417C-BE7C-43D4-996C-5743C7DDDDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8015417C-BE7C-43D4-996C-5743C7DDDDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8015417C-BE7C-43D4-996C-5743C7DDDDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{079D23E2-E752-4CB6-A082-A0AE60BEDB87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{079D23E2-E752-4CB6-A082-A0AE60BEDB87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{079D23E2-E752-4CB6-A082-A0AE60BEDB87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{079D23E2-E752-4CB6-A082-A0AE60BEDB87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{337787D3-6EDB-4B65-9075-C4C7CB988F6D} = {C86B6DC5-5B37-43CB-BC5F-8666C0CCB5B5}
 		{16320486-2993-4FC5-9C04-1D70EA95FBB0} = {C86B6DC5-5B37-43CB-BC5F-8666C0CCB5B5}
 		{8015417C-BE7C-43D4-996C-5743C7DDDDBC} = {C86B6DC5-5B37-43CB-BC5F-8666C0CCB5B5}
+		{079D23E2-E752-4CB6-A082-A0AE60BEDB87} = {C06D5236-7C95-43EE-B572-99A5FE3B8462}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F0D2D55D-F636-4675-BAE6-33BDCCC0EBA2}
