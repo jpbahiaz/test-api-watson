@@ -1,6 +1,10 @@
 ﻿using Autofac;
 using Microsoft.Extensions.Configuration;
 using System;
+using TestApiWatson.AppService;
+using TestApiWatson.AppService.Interfaces;
+using TestApiWatson.Domain;
+using TestApiWatson.Domain.Interfaces;
 using TesteApiWatson.Infra.Data.ServiceAgent;
 using TesteApiWatson.Infra.Data.ServiceAgent.Interfaces;
 
@@ -18,7 +22,9 @@ namespace TestApiWatson.Infra.CrossCutting.IoC
 
             //DefinirAplicacaoEmTesteOuNao();
 
+            ConfigurarInjecoesAppServices();
             ConfigurarInjecoesServiceAgents();
+            ConfigurarInjecoesServices();
         }
 
         public static void Build()
@@ -35,6 +41,17 @@ namespace TestApiWatson.Infra.CrossCutting.IoC
         //    aplicacaoEmTesteUnitario = bool.Parse(configurationSection.GetSection("AplicacaoEmTesteUnitario").Value);
         //}
 
+        private static void ConfigurarInjecoesAppServices()
+        {
+            ConstrutorContainer.RegisterType<MensagemAppService>().As<IMensagemAppService>();
+            ConstrutorContainer.RegisterType<MensagemAppService>().As<IMensagemAppService>();
+        }
+
+        private static void ConfigurarInjecoesServices()
+        {
+            ConstrutorContainer.RegisterType<MensagemService>().As<IMensagemService>();
+            ConstrutorContainer.RegisterType<WatsonService>().As<IWatsonService>();
+        }
 
         private static void ConfigurarInjecoesServiceAgents()
         {

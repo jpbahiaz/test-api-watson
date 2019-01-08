@@ -13,6 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\2 - Application\TestApiWatson.AppService\TestApiWatson.AppService.csproj" />
+    <ProjectReference Include="..\..\..\3 - Domain\TestApiWatson.Domain.Interfaces\TestApiWatson.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\..\..\3 - Domain\TestApiWatson.Domain\TestApiWatson.Domain.csproj" />
     <ProjectReference Include="..\..\1 - Data\TesteApiWatson.Infra.Data.ServiceAgent\TesteApiWatson.Infra.Data.ServiceAgent.csproj" />
   </ItemGroup>
 

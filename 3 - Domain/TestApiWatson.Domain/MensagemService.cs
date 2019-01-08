@@ -7,7 +7,7 @@ using TesteApiWatson.Infra.Data.ServiceAgent.Interfaces;
 
 namespace TestApiWatson.Domain
 {
-    class MensagemService : IMensagemService
+    public class MensagemService : IMensagemService
     {
         public readonly IWatsonAgent _watsonAgent;
 
