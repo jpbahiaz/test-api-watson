@@ -16,7 +16,7 @@ namespace TestApiWatson.Domain
             _watsonAgent = watsonAgent;
         }
 
-        public List<string> TratarMensagemEEnviar(string mensagem)
+        public ConversaWatson TratarMensagemEEnviar(string mensagem)
         {
 
             ConversaWatson msg = ConversationService.MontarMensagem(mensagem);
@@ -24,7 +24,7 @@ namespace TestApiWatson.Domain
 
             ConversationService.DefinirContexto(retornoWatson);
 
-            return retornoWatson.Output.Text;
+            return retornoWatson;
         }
     }
 }

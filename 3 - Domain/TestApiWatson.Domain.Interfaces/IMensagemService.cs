@@ -7,6 +7,6 @@ namespace TestApiWatson.Domain.Interfaces
 {
     public interface IMensagemService
     {
-        List<string> EnviarMensagem(string mensagem);
+        ConversaWatson EnviarMensagem(string mensagem);
     }
 }

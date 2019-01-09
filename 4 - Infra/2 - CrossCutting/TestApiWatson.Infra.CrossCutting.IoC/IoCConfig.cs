@@ -14,7 +14,7 @@ namespace TestApiWatson.Infra.CrossCutting.IoC
     {
         public static ContainerBuilder ConstrutorContainer { get; set; }
         public static IContainer Container { get; set; }
-        private static bool aplicacaoEmTesteUnitario;
+        //private static bool aplicacaoEmTesteUnitario;
 
         public static void Inicializar()
         {

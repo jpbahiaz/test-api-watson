@@ -16,7 +16,7 @@ namespace TestApiWatson.Domain
             _watsonService = watsonService;
         }
 
-        public List<string> EnviarMensagem(string mensagem)
+        public ConversaWatson EnviarMensagem(string mensagem)
         {
 
             //throw new NotImplementedException();
