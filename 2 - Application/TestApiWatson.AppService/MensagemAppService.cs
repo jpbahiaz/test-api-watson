@@ -17,7 +17,7 @@ namespace TestApiWatson.AppService
             _mensagemService = mensagemService;
         }
 
-        public ConversaWatson EnviarMensagem(string mensagem)
+        public List<string> EnviarMensagem(string mensagem)
         {
             return _mensagemService.EnviarMensagem(mensagem);
         }

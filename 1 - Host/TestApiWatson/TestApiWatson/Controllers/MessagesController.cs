@@ -37,7 +37,7 @@ namespace TestApiWatson.Controllers
 
         // POST: api/Messages
         [HttpPost]
-        public ConversaWatson Post([FromBody] string value)
+        public List<string> Post([FromBody] string value)
         {
             return _mensagemAppService.EnviarMensagem(value);
         }

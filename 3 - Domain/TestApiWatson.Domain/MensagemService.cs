@@ -9,19 +9,19 @@ namespace TestApiWatson.Domain
 {
     public class MensagemService : IMensagemService
     {
-        public readonly IWatsonAgent _watsonAgent;
+        public readonly IWatsonService _watsonService;
 
-        public MensagemService(IWatsonAgent watsonAgent)
+        public MensagemService(IWatsonService watsonService)
         {
-            _watsonAgent = watsonAgent;
+            _watsonService = watsonService;
         }
 
-        public ConversaWatson EnviarMensagem(string mensagem)
+        public List<string> EnviarMensagem(string mensagem)
         {
 
             //throw new NotImplementedException();
-            //return _watsonAgent.EnviarMensagem("teste");
-            return new ConversaWatson();
+            return _watsonService.TratarMensagemEEnviar(mensagem);
+            //return new ConversaWatson();
         }
     }
 }
